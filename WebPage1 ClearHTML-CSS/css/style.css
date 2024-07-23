@@ -10,7 +10,7 @@ h1, h2 {
     line-height: 80px;
 }
 
-p, .firstDo, a{
+p, .firstDo, a, h3{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -25,20 +25,20 @@ h1, p {
 }
 
 .headerBox{
-    width: 82.878788%; /* 1094/1320 */
+    width: 100%; /* 1094/1320 */
     height: 57px;
-    background-color: green;
     margin: auto;
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 /* Main Box */
-.mainBox{
-    width: 1320px;
-    height: 2000px;
+.main__box{
+    width: 1094px;
     margin: auto;
+    background-color: yellow;
 }
 /* Header */
 .login__button{
@@ -60,7 +60,7 @@ h1, p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 18.75px;
 
     text-decoration: none;
     color: #464646;
@@ -68,20 +68,23 @@ h1, p {
 
 .menu___box{
     height: 100%;
-    width: 50%;
-    justify-content: center;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
 
 
 /* Main Big Banner */
 .MainBanner{
-    width: 100%;
+    width: 69.364162%; /* 1320/1903 */
     height: 724px;
     border-radius: 30px;
     background-color: #E9FBF9;
     display: inline-flex;
-    margin-top: 70px;
+    margin: 70px 15.291645% 0 15.291645%
 }
 
 .heroText{
@@ -154,8 +157,166 @@ h1, p {
     color: #FF6107;
     letter-spacing: 2.5px;
 }
+/* Sponcores Block */
+.sponsores{
+    margin-top: 170px;
+    display: grid;
+    width: 100%;
+    height: 236px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.sponsore__item{
+    background-color: #F1FAF9;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*  Servises Block */
+.service__label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FF6107;
+    letter-spacing: 2px;
+
+    height: 18px;
+    width: 117px;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+    padding: 12px 0 12px 0;
+    margin: 100px 0 0 0;
+}
+
+.servece__title{
+    width: 534px;
+    font-size: 44px;
+    line-height: 80px;
+    margin: 0px 110px 0 0;
+}
+.service__text__box{
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 155px;
+}
+.service__text{
+    width: 428px;
+    height: 90px;
+}
+
+.services__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px ;
+    /* height: 302px; */
+    /* width: 350px; */
+}
+
+.services___card h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23.18px;
+    margin: 20px 0 20px 0;
+
+}
+
+.services___card p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #464646;
+    margin-bottom: 30px;
+}
+
+.services___card a{
+    font-weight: 700;
+    font-size: 18px;
+    color: #124F48;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.service__button{
+        height: 21px;
+        width: 140px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+}
 
 
+/* Achievemenst */
+.achiv__label{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FF6107;
+        letter-spacing: 1.6px;
+        line-height: 18.75px;
+    
+        height: 18px;
+        width: 161px;
+        border-radius: 4px;
+        background-color: white;
+        text-align: center;
+        padding: 12px 0 12px 0;
+        margin: 225px 0 0 0;
+}
+
+.achiv__box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 1380px;
+    gap: 85px;
+}
+
+.box__side{
+    background-color: red;
+}
+
+.box__img1{
+    background: black;
+    width: 511px;
+    height: 600px;
+}
+
+.box___text{
+    background-color: #FF6107;
+}
+
+
+.box__grid{
+    display: grid;
+    grid-column: 4;
+    gap: 30px;
+    width: 100%;
+    height: 410px;
+}
+
+.box_grid_item{
+    background-color: greenyellow;
+}
+
+.box_img2{
+    background-color: blue;
+    width: 100%;
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+/* Addaptive */
 @media (max-width:1600px ) {
     .MainBanner{
         margin-top: 10px;
