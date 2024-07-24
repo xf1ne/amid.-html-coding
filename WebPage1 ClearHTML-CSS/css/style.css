@@ -36,7 +36,7 @@ h1, p {
 
 /* Main Box */
 .main__box{
-    width: 1094px;
+    width: 1110px;
     margin: auto;
     background-color: yellow;
 }
@@ -268,45 +268,113 @@ h1, p {
         margin: 225px 0 0 0;
 }
 
+.achiv_title{
+    font-size: 44px;
+    line-height: 80px;
+    font-weight: 700;
+    width: 540px;
+}
+.achiv_title span{
+    color: #FF6107;
+}
+
+.img_1{
+    margin-top: 140px;
+}
+
+.box___text{
+    margin-top: 35px;
+    height: 600px;
+}
+
+.box___text .box___text2, h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.box___text .box___text2, p{
+    font-weight: 400;
+    line-height: 36px;
+    max-width: 511px;
+}
+
 .achiv__box{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     height: 1380px;
-    gap: 85px;
-}
-
-.box__side{
-    background-color: red;
+    gap: 40px;
 }
 
 .box__img1{
     background: black;
     width: 511px;
     height: 600px;
+    margin-top: 140px;
+    margin-right: auto;
 }
-
-.box___text{
-    background-color: #FF6107;
-}
-
 
 .box__grid{
+    margin-top: 30px;
     display: grid;
     grid-column: 4;
     gap: 30px;
     width: 100%;
-    height: 410px;
+    height: auto;
+    justify-content: right;
 }
 
 .box_grid_item{
-    background-color: greenyellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 465px;
+    height: 80px;
 }
 
-.box_img2{
-    background-color: blue;
-    width: 100%;
-    height: 600px;
+.grid__label{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+    color: #124F48;
+
+}
+.grid_body_text{
+    font-weight: 500;
+    line-height: 26px;
+    color: #124F48;
+}
+.grid_end_text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FF823B;
+
+}
+.img_2{
+margin: 70px 0 35px 19px
+}
+.box___text2{
+    padding-left: 20px;
+}
+.box___text p{
+margin-bottom: 45px;
+}
+
+.box__button{
+    display: flex;
+    height: 22px;
+    width: 160px;
+    justify-content: space-between  ;
+    align-items: center;
+    cursor: pointer;
+}
+
+.achiv__button{
+    text-decoration: none;
+    color: #124F48;
 }
 
 
@@ -317,11 +385,11 @@ h1, p {
 
 
 /* Addaptive */
-@media (max-width:1600px ) {
+/* @media (max-width:1600px ) {
     .MainBanner{
         margin-top: 10px;
     }
     .headerBox{
         margin-top: 0;
     }
-}
+} */
