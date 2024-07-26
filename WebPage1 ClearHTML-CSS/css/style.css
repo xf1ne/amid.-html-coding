@@ -8,15 +8,14 @@ h1, h2 {
     font-weight: 800;
     font-size: 64px;
     line-height: 80px;
+    color: #021D1A;
 }
 
-p, .firstDo, a, h3{
+p, a, h3, .date_lable, .firstDo {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-}
-h1, p {
     color: #021D1A;
 }
 
@@ -287,14 +286,14 @@ h1, p {
     height: 600px;
 }
 
-.box___text .box___text2, h3{
+.box___text h3, .box___text2 h3{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 35px;
 }
 
-.box___text .box___text2, p{
+.box___text p, .box___text2 p{
     font-weight: 400;
     line-height: 36px;
     max-width: 511px;
@@ -360,7 +359,7 @@ margin: 70px 0 35px 19px
     padding-left: 20px;
 }
 .box___text p{
-margin-bottom: 45px;
+    margin-bottom: 45px;
 }
 
 .box__button{
@@ -379,17 +378,53 @@ margin-bottom: 45px;
 
 /* Blog block */
 .blog__block{
-width: 100%;
-height: 945px;
-background-color: yellow;
+    width: 100%;
+    height: 945px;
+    background-color: yellow;
+    text-align: center;
 }
+.blog__block h2{
+    font-size: 44px;
+    font-weight: 700;
+}
+.blog__block p{
+    margin: auto;
+    margin-top: 25px;
+    font-size: 18px;
+    margin-bottom: 85px;
+}
+.main_label_text{
+    width: 662px;
+}
+
+.blog__label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FF6107;
+    letter-spacing: 1.6px;
+    line-height: 18.75px;
+
+    height: 38px;
+    width: 94px;
+    border-radius: 4px;
+    background-color: white;
+    /* padding: 12px 0 12px 0; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
 
 .blog_content_block{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     height: 700px;
-    gap: 80px;
+    gap: 60px;
+    text-align: left;
 }
 .content_block{
     background-color: pink;
@@ -397,14 +432,29 @@ background-color: yellow;
     padding: 30px;
 }
 
+.content_block h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 43px;
+    margin-bottom: 35px;
+}
+
 .date_lable{
-    background-color: indigo;
-    height: 75px;
-    width: 75px;
+    background-color: #124F48;
+    height: 59px;
+    width: 43px;
     border-radius: 10px;
     position: absolute;
     top: 0px;
     right: 0px;
+
+    text-align: left;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: white;
+    padding: 9px 16px;
 }
 
 
